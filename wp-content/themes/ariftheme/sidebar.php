@@ -3,7 +3,7 @@
 					<div class="box">
 						<div class="heading"><h2>Latest Albums</h2></div>
 						<div class="content">
-							<img src="images/albums.png"/>
+							<img src="<?php echo get_template_directory_uri()  ?>/images/albums.png"/>
 						</div>
 					</div>
 					<div class="box">

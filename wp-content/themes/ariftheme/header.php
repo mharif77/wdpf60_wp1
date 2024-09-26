@@ -11,25 +11,26 @@
 
 <nav>
 	<div class="wrap-nav zerogrid">
-		<div class="menu">
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li class="current"><a href="blog.html">Blog</a></li>
-				<li><a href="gallery.html">Gallery</a></li>
-				<li><a href="single.html">About</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-		</div>
+	
+
+<?php 
+
+wp_nav_menu(array(
+
+	'menu'				=> "", // (int|string|WP_Term) Desired menu. Accepts a menu ID, slug, name, or object.
+	'menu_class'		=> "", // (string) CSS class to use for the ul element which forms the menu. Default 'menu'.
+	'menu_id'			=> "", // (string) The ID that is applied to the ul element which forms the menu. Default is the menu slug, incremented
+	
+	'container_class'	=> "menu", // (string) Class that is applied to the container. Default 'menu-{menu slug}-container'.
+	
+	
+	'theme_location'	=> "primary", // (string) Theme location to be used. Must be registered with register_nav_menu() in order to be selectable by the user.
+	
+) );
+
+?>
+
 		
-		<div class="minimenu"><div>MENU</div>
-			<select onchange="location=this.value">
-				<option></option>
-				<option value="index.html">Home</option>
-				<option value="blog.html">Blog</option>
-				<option value="gallery.html">Gallery</option>
-				<option value="single.html">About</option>
-				<option value="contact.html">Contact</option>
-			</select>
-		</div>		
+			
 	</div>
 </nav>
